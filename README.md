@@ -33,7 +33,13 @@ Swarm.
    docker build -t paired_app_image .
    ```
 
-2. **Run the application using Docker Compose**  
+2. **Initialize Docker Swarm**
+
+   ```bash
+   docker swarm init
+   ```
+
+3. **Run the application using Docker Compose**  
    Start the containers using Docker Compose:
 
    ```bash
@@ -81,7 +87,9 @@ npm install
 cd ../front
 npm install
 ```
+
 After installing the dependencies, try building the Docker image again:
+
 ```bash
 docker build -t paired_app_image .
 ```
